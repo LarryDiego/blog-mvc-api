@@ -38,7 +38,7 @@ const postModel = {
 
   createPost(title, content) {
     const post = {
-      id: Date.now().toString,
+      id: Date.now().toString(),
       title: title,
       content: content,
       createdAt: new Date(),
