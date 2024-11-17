@@ -1,4 +1,19 @@
-let posts = [];
+let posts = [
+  {
+    id: '1',
+    title: 'Teste 1',
+    content: 'Lorem ipsum...',
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    id: '2',
+    title: 'Teste 2',
+    content: 'Lorem ipsum...',
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+];
 
 // Post { id, title, content, createdAt, updatedAt}
 
