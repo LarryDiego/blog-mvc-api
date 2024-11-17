@@ -23,7 +23,7 @@ const postModel = {
   },
 
   savePost(post) {
-    posts.push(post);
+    posts.unshift(post);
   },
 
   updatePost(id, updatedPost) {
