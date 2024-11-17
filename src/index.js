@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('node:path');
+const router = require('./routes');
 
 const app = express();
 
@@ -12,6 +13,9 @@ app.use(express.static('public'));
 
 // Configuração para ler dados da requisição
 app.use(express.urlencoded({ extended: true }));
+
+// Rotas da aplicação
+app.use(router);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () =>
